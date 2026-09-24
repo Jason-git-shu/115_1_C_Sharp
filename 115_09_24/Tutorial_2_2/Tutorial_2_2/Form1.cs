@@ -16,5 +16,9 @@ namespace Tutorial_2_2
         {
             InitializeComponent();
         }
+        private void messageButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("中秋快樂");
+        }
     }
 }
