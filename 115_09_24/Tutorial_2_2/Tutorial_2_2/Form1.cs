@@ -20,5 +20,10 @@ namespace Tutorial_2_2
         {
             MessageBox.Show("中秋快樂");
         }
+
+        private void messageButton_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("中秋快樂")
+        }
     }
 }

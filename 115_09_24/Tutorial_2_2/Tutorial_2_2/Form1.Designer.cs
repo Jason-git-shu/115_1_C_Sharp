@@ -42,6 +42,7 @@ namespace Tutorial_2_2
             this.messageButton.TabIndex = 0;
             this.messageButton.Text = "顯示訊息";
             this.messageButton.UseVisualStyleBackColor = true;
+            this.messageButton.Click += new System.EventHandler(this.messageButton_Click_1);
             // 
             // Form1
             // 
