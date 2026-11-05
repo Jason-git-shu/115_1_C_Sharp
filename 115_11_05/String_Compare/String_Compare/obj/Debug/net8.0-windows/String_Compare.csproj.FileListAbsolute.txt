@@ -1,0 +1,17 @@
+C:\Users\m303\Desktop\115_1_C_Sharp\115_11_05\String_Compare\String_Compare\bin\Debug\net8.0-windows\String_Compare.exe
+C:\Users\m303\Desktop\115_1_C_Sharp\115_11_05\String_Compare\String_Compare\bin\Debug\net8.0-windows\String_Compare.deps.json
+C:\Users\m303\Desktop\115_1_C_Sharp\115_11_05\String_Compare\String_Compare\bin\Debug\net8.0-windows\String_Compare.runtimeconfig.json
+C:\Users\m303\Desktop\115_1_C_Sharp\115_11_05\String_Compare\String_Compare\bin\Debug\net8.0-windows\String_Compare.dll
+C:\Users\m303\Desktop\115_1_C_Sharp\115_11_05\String_Compare\String_Compare\bin\Debug\net8.0-windows\String_Compare.pdb
+C:\Users\m303\Desktop\115_1_C_Sharp\115_11_05\String_Compare\String_Compare\obj\Debug\net8.0-windows\String_Compare.Form1.resources
+C:\Users\m303\Desktop\115_1_C_Sharp\115_11_05\String_Compare\String_Compare\obj\Debug\net8.0-windows\String_Compare.csproj.GenerateResource.cache
+C:\Users\m303\Desktop\115_1_C_Sharp\115_11_05\String_Compare\String_Compare\obj\Debug\net8.0-windows\String_Compare.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\m303\Desktop\115_1_C_Sharp\115_11_05\String_Compare\String_Compare\obj\Debug\net8.0-windows\String_Compare.AssemblyInfoInputs.cache
+C:\Users\m303\Desktop\115_1_C_Sharp\115_11_05\String_Compare\String_Compare\obj\Debug\net8.0-windows\String_Compare.AssemblyInfo.cs
+C:\Users\m303\Desktop\115_1_C_Sharp\115_11_05\String_Compare\String_Compare\obj\Debug\net8.0-windows\String_Compare.csproj.CoreCompileInputs.cache
+C:\Users\m303\Desktop\115_1_C_Sharp\115_11_05\String_Compare\String_Compare\obj\Debug\net8.0-windows\String_Compare.sourcelink.json
+C:\Users\m303\Desktop\115_1_C_Sharp\115_11_05\String_Compare\String_Compare\obj\Debug\net8.0-windows\String_Compare.dll
+C:\Users\m303\Desktop\115_1_C_Sharp\115_11_05\String_Compare\String_Compare\obj\Debug\net8.0-windows\refint\String_Compare.dll
+C:\Users\m303\Desktop\115_1_C_Sharp\115_11_05\String_Compare\String_Compare\obj\Debug\net8.0-windows\String_Compare.pdb
+C:\Users\m303\Desktop\115_1_C_Sharp\115_11_05\String_Compare\String_Compare\obj\Debug\net8.0-windows\String_Compare.genruntimeconfig.cache
+C:\Users\m303\Desktop\115_1_C_Sharp\115_11_05\String_Compare\String_Compare\obj\Debug\net8.0-windows\ref\String_Compare.dll
