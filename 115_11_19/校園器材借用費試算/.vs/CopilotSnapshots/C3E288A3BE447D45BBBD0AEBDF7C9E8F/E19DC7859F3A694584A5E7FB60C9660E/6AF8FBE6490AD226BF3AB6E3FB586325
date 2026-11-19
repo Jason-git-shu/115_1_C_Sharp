@@ -1,0 +1,83 @@
+﻿using System;
+using System.Windows.Forms;
+
+namespace EquipmentRental
+{
+    public partial class RentalForm : Form
+    {
+        public RentalForm()
+        {
+            InitializeComponent();
+        }
+        bool check = false;
+        int days;
+        int discount_offer = 30;
+        int pay = 0;
+
+        private void calculateButton_Click(object sender, EventArgs e)
+        {
+
+            dailyRateLabel.Text = "—";
+            totalLabel.Text = "—";
+            feedbackLabel.Text = "";
+            // TODO 1：新增優惠結果標籤後，每次試算也要將它重設為「—」。
+
+            
+            if (int.TryParse(daysTextBox.Text, out days) && days >= 1 && days <= 7)
+            {
+                // TODO 2：用 if-else 檢查天數是否在 1～7 天內。
+                // TODO 3：在天數有效的分支內判斷日費及社團優惠。
+                // TODO 4：算出應付金額並更新三個結果欄位。
+                // 完成 TODO 2～4 後，用你的程式取代下一行。
+                if (days >= 6)
+                {
+                    pay = days * 60;
+                    if (!check)
+                    {
+                        days -= discount_offer;
+                    }
+                }
+                feedbackLabel.Text = "已讀到整數，請完成範圍檢查與試算。";
+            }
+            else
+            {
+                feedbackLabel.Text = "請輸入 1 到 7 之間的整數。";
+            }
+
+        }
+
+        private void dailyRateCaptionLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void discountCaptionLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void totalCaptionLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clubCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (clubCheckBox.Checked)
+            {
+                check = true;
+            }
+            else
+            {
+                check = false;
+            }
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            days = 0;
+            pay = 0;
+
+        }
+    }
+}

@@ -1,0 +1,118 @@
+using System;
+using System.Windows.Forms;
+
+namespace EquipmentRental
+{
+    public partial class RentalForm : Form
+    {
+        public RentalForm()
+        {
+            InitializeComponent();
+        }
+        bool check = false;
+        int days;
+        int discount_offer = 30;
+        int pay = 0;
+
+        private void calculateButton_Click(object sender, EventArgs e)
+        {
+
+            dailyRateLabel.Text = "—";
+            discountLabel.Text = "—";
+            totalLabel.Text = "—";
+            feedbackLabel.Text = "";
+
+            if (!int.TryParse(daysTextBox.Text, out days))
+            {
+                feedbackLabel.Text = "請輸入 1 到 7 之間的整數。";
+            }
+            else if (days < 1 || days > 7)
+            {
+                feedbackLabel.Text = "請輸入 1 到 7 之間的整數。";
+            }
+            else
+            {
+                int dailyRate;
+                int discount;
+                string discountMessage;
+
+                if (days <= 2)
+                {
+                    dailyRate = 80;
+                }
+                else if (days <= 5)
+                {
+                    dailyRate = 70;
+                }
+                else
+                {
+                    dailyRate = 60;
+                }
+
+                if (clubCheckBox.Checked)
+                {
+                    if (days >= 3)
+                    {
+                        discount = discount_offer;
+                        discountMessage = "折抵 30 元";
+                    }
+                    else
+                    {
+                        discount = 0;
+                        discountMessage = "未達折抵門檻";
+                    }
+                }
+                else
+                {
+                    discount = 0;
+                    discountMessage = "無優惠";
+                }
+
+                pay = days * dailyRate - discount;
+                dailyRateLabel.Text = dailyRate.ToString() + " 元";
+                discountLabel.Text = discountMessage;
+                totalLabel.Text = pay.ToString() + " 元";
+            }
+
+        }
+
+        private void dailyRateCaptionLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void discountCaptionLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void totalCaptionLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clubCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (clubCheckBox.Checked)
+            {
+                check = true;
+            }
+            else
+            {
+                check = false;
+            }
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            daysTextBox.Text = "";
+            feedbackLabel.Text = "";
+            clubCheckBox.Checked = false;
+            dailyRateLabel.Text = "—";
+            discountLabel.Text = "—";
+            totalLabel.Text = "—";
+            days = 0;
+            pay = 0;
+        }
+    }
+}
